@@ -5,7 +5,7 @@ public:
         double res = 1;
         while(n>0){
             if(n&1){
-                //means odd
+                //means bit is set 
                 res *=x;
             }
             x *=x;
