@@ -21,9 +21,6 @@ public:
             ten = (ten%1140 * 10%1140)%1140;
         }
         return binPowMod(a,number);
-        // return number;
-        
-        
     }
 };
 
