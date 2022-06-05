@@ -9,11 +9,12 @@ public:
                 return x;
         }
         double small_ans = myPow(x,n/2);
-        small_ans *= small_ans;
+        double final_ans =small_ans* small_ans;
         if(n%2!=0){
-            small_ans *=x;
+            final_ans *=x;
         }
-        return small_ans;
+        return final_ans;
+        
     }
     double myPow(double x, int n) {
        if(n>=0){
