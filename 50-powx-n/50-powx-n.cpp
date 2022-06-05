@@ -1,20 +1,18 @@
 class Solution {
 public:
     double myNewPow(double x, int n) {
-        
-        if(n==0){
-            return 1;
+//         Using Binary Exponenetion
+        double res = 1;
+        while(n>0){
+            if(n&1){
+                //means odd
+                res *=x;
+            }
+            x *=x;
+            n = n>>1;
+            
         }
-        else if(n==1){
-                return x;
-        }
-        double small_ans = myPow(x,n/2);
-        double final_ans =small_ans* small_ans;
-        if(n%2!=0){
-            final_ans *=x;
-        }
-        return final_ans;
-        
+        return res;     
     }
     double myPow(double x, int n) {
        if(n>=0){
