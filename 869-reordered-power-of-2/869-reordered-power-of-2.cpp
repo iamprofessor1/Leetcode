@@ -18,7 +18,7 @@ public:
         while( temp <= 1e10 ){
             string s = to_string(temp);
             int t = (int)s.size();
-            cout<<s<<endl;
+            // cout<<s<<endl;
             powerOftwo[t].push_back(s);
             temp *=2;
             if(t==10){
@@ -29,7 +29,7 @@ public:
         for(int i = 0 ; i<powerOftwo[count].size();i++){
             
             string s = powerOftwo[count][i];
-            cout<<s<<endl;
+            // cout<<s<<endl;
             unordered_map<char,long long>temp = m1;
             bool check = true;
             for(auto x :s){
