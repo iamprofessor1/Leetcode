@@ -7,8 +7,7 @@ public:
         while(maxi !=0 &&  mini !=0){
             cnt += maxi/mini;
             maxi = maxi%mini;
-            swap(maxi,mini);
-            
+            swap(maxi,mini);            
         }
         return cnt;
     }
