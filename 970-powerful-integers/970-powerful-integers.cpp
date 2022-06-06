@@ -31,6 +31,7 @@ public:
             }
         }
         else{
+//             maxi == 1 and mini == 1
             if(2<= bound)
             {
             ans.push_back(2);
