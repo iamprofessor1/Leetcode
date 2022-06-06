@@ -22,7 +22,6 @@ public:
             curr = curr->next;
             right--;
         }
-        // cout<<prev->val<<" "<<curr->val<<endl;
         ListNode* connector = prev , *tail = curr; 
         while(right--){
             ListNode*next = curr->next;
@@ -38,6 +37,7 @@ public:
         }
 
         tail->next = curr;
+        
         return head;
         
         
