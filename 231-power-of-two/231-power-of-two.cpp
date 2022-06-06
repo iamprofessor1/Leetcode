@@ -7,8 +7,6 @@ public:
         if(n==1){
             return true;
         }
-        // long long fi = floor(log2(n));
-        // long long se = ceil(log2(n));
         return floor(log2(n)) == ceil(log2(n)) ;
     }
 };
