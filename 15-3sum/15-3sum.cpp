@@ -1,13 +1,17 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
+        
         sort(nums.begin(),nums.end());
         vector<vector<int>>v;
         set<vector<int>>s;
         
         for(int i = 0 ; i< nums.size() ;i++){
+            
             int start = i+1 ;
             int end = nums.size()-1;
+            
+            
             while(start<end){
                 
                 int sum = nums[i] + nums[start] + nums[end];
@@ -26,9 +30,9 @@ public:
                 }
                 else if(sum>0){
                     end--;
-                    // if(end==i){
-                    //     end--;
-                    // }
+                    if(end==i){
+                        end--;
+                    }
                 }
                 else{
                     start++;
