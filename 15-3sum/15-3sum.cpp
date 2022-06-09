@@ -30,9 +30,7 @@ public:
                 }
                 else if(sum>0){
                     end--;
-                    if(end==i){
-                        end--;
-                    }
+        
                 }
                 else{
                     start++;
