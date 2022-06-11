@@ -3,7 +3,7 @@ public:
     int lengthOfLongestSubstring(string s) {
         int start = 0;
         int end = 0;
-        map<char,int>mp;
+        unordered_map<char,int>mp;
         int ans = 0;
         for(int i = 0 ; i< s.size() ;i++){
             end = i ;
