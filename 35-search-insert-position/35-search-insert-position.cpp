@@ -3,7 +3,7 @@ public:
     int searchInsert(vector<int>& nums, int target) {
 //         finding lower bound
         int low = 0 , high = nums.size() -1;
-        int ans = nums.size();
+        int ans = -1;
         while(low<=high){
             int mid = low +(high - low)/2;
             // cout<<low<<" "<<mid<<" "<<high<<endl;
@@ -19,6 +19,6 @@ public:
                 high = mid - 1;
             }
         }
-        return low;
+        return ans+1;
     }
 };
