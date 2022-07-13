@@ -4,7 +4,7 @@ public:
         sort(v.begin(),v.end());
         int ans = v[0]+v[1]+v[2];
         int min_diff = abs(ans-target);
-        for(int i = 0 ; i<v.size() ;i++){
+        for(int i = 0 ; i<v.size()-2 ;i++){
             int start = i+1;
             int end = v.size()-1LL;
             while(start<end){
