@@ -17,9 +17,7 @@ public:
         
     }
     bool isValidBST(TreeNode* root) {
-        long long  prev = LLONG_MIN;
-        long long next = LLONG_MAX;
-        return check(root,prev,next);
+        return check(root,LLONG_MIN,LLONG_MAX);
         
     }
 };
